@@ -14,6 +14,7 @@ El objetivo de este proyecto es demostrar el desarrollo de un flujo de trabajo a
 - Lectura y extracción de información desde archivos `.dat`, `.fit` y `.sed`.
 - Reconstrucción de las componentes atenuada y no atenuada de la distribución de energía espectral (SED).
 - Generación automática de una figura por cada galaxia procesada.
+- Generación de un archivo `mass_sfr.dat` con las masas estelares y tasas de formación estelar (SFR) de todas las galaxias procesadas.
 - Organización del código en funciones reutilizables y documentadas.
 - Uso de rutas relativas para facilitar la ejecución en distintos equipos.
 
@@ -25,7 +26,9 @@ magphys_sed_processing/
 ├── data/                         # Archivos de entrada (.dat, .fit, .sed)
 ├── plots/                        # Figuras generadas automáticamente
 ├── magphys_sed_processing.ipynb  # Notebook principal
-└── README.md                     # Documentación del proyecto
+├── mass_sfr.dat                  # Masas estelares y SFR de las galaxias procesadas
+├── README.md                     # Documentación del proyecto
+└── LICENSE                       # Licencia del proyecto
 ```
 
 ## Requisitos y ejecución
@@ -46,10 +49,15 @@ magphys_sed_processing/
 2. Colocar los archivos `.fit` y `.sed` en la carpeta `data/`.
 3. Abrir el notebook `magphys_sed_processing.ipynb`.
 4. Ejecutar todas las celdas en orden.
-5. Las figuras generadas se almacenarán automáticamente en la carpeta `plots/`.
+5. Las figuras generadas se almacenarán automáticamente en la carpeta `plots/` y se creará el archivo `mass_sfr.dat` con las masas estelares y las tasas de formación estelar (SFR) de todas las galaxias procesadas.
 
 ## Ejemplo del resultado
 
+La ejecución del notebook produce:
+
+- Una figura de la distribución de energía espectral (SED) para cada galaxia procesada, almacenada en la carpeta `plots/`.
+- Un archivo `mass_sfr.dat` que resume las masas estelares y las tasas de formación estelar (SFR) de todas las galaxias analizadas.
+  
 ![Ejemplo de una SED](plots/197260.png)
 
 ## Limitaciones y trabajo a futuro
