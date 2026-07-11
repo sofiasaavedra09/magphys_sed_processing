@@ -48,6 +48,10 @@ magphys_sed_processing/
 4. Ejecutar todas las celdas en orden.
 5. Las figuras generadas se almacenarán automáticamente en la carpeta `plots/`.
 
+## Ejemplo del resultado
+
+![Ejemplo de una SED](plots/197260.png)
+
 ## Limitaciones y trabajo a futuro
 
 Este proyecto fue desarrollado con un conjunto reducido de archivos de salida de MAGPHYS cuyo objetivo es demostrar la automatización del procesamiento, más que realizar un análisis astrofísico completo.
